@@ -124,7 +124,6 @@ Exit MySQL Shell:
 Docker Commands
 
 To manage the Docker container, use the following commands:
-
 List running containers:
 docker container ls
 
