@@ -93,40 +93,48 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 ```dependency
 <dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<version>8.3.0</version>
-		</dependency>
+<groupId>com.mysql</groupId>
+<artifactId>mysql-connector-j</artifactId>
+<version>8.3.0</version>
+</dependency>
 ```
 
 MySQL Shell Commands
+
 To interact with the MySQL database using MySQL Shell, use the following commands:
 
-Start MySQL Shell:
+```Start MySQL Shell:
 mysqlsh
+```
 
-Connect to the database:
+```Connect to the database:
 \connect todos-user@localhost:3306
+```
 
-Switch to SQL mode:
+```Switch to SQL mode:
 \sql
+```
 
-
-Use the todos database:
+```Use the todos database:
 use todos;
+```
 
-Query the todo table:
+```Query the todo table:
 select * from to_do;
+```
 
-Exit MySQL Shell:
+```Exit MySQL Shell:
 \quit
+```
 
 Docker Commands
 
 To manage the Docker container, use the following commands:
-List running containers:
+
+```List running containers:
 docker container ls
+```
 
-Stop a container:
+```Stop a container:
 docker container stop <container_id>
-
+```
